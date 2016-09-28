@@ -3,4 +3,10 @@
     <string name="texto">Esto es un texto de prueba</string>
     <string name="textoBoton">aqui clickea</string>
     <string name="nombre">Nombre</string>
+    <string name="direccion">Direccion</string>
+    <string name="telefono">Telefono</string>
+    <string name="edad">Edad</string>
+    <string name="estadoCivil">Estado Civil</string>
+    <string name="estado">Estado</string>
+    <string name="pais">Pais</string>
 </resources>
