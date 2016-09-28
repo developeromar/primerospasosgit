@@ -1,11 +1,11 @@
 package com.desarrolladorandroid.holamundo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     boolean bandera = true;
@@ -23,20 +23,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (bandera) {
-                    texto.setText("boton 1");
-                    bandera = false;
-                } else {
-                    texto.setText("Desactivado");
-                    bandera = true;
-                }
+                Intent i = new Intent(MainActivity.this, Responsiva.class);
+                startActivity(i);
             }
         });
         boton2.setOnClickListener(this);
         texto.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                Toast.makeText(MainActivity.this, "se dio un long click", Toast.LENGTH_LONG).show();
+
                 return false;
             }
         });
