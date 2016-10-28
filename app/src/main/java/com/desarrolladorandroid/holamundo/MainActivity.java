@@ -41,13 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button2:
-                if (bandera) {
-                    texto.setText("boton2");
-                    bandera = false;
-                } else {
-                    texto.setText("Desactivado");
-                    bandera = true;
-                }
+                Intent i = new Intent(MainActivity.this, Constrain.class);
+                startActivity(i);
                 break;
         }
     }
